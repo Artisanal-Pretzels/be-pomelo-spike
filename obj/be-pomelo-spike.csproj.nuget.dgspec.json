@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/stef/nc/project/spiking/be-pomelo-spike/be-pomelo-spike.csproj": {}
+    "/home/sam/Desktop/Northcoders/Projects/be-pomelo-spike/be-pomelo-spike.csproj": {}
   },
   "projects": {
-    "/home/stef/nc/project/spiking/be-pomelo-spike/be-pomelo-spike.csproj": {
+    "/home/sam/Desktop/Northcoders/Projects/be-pomelo-spike/be-pomelo-spike.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/stef/nc/project/spiking/be-pomelo-spike/be-pomelo-spike.csproj",
+        "projectUniqueName": "/home/sam/Desktop/Northcoders/Projects/be-pomelo-spike/be-pomelo-spike.csproj",
         "projectName": "be-pomelo-spike",
-        "projectPath": "/home/stef/nc/project/spiking/be-pomelo-spike/be-pomelo-spike.csproj",
-        "packagesPath": "/home/stef/.nuget/packages/",
-        "outputPath": "/home/stef/nc/project/spiking/be-pomelo-spike/obj/",
+        "projectPath": "/home/sam/Desktop/Northcoders/Projects/be-pomelo-spike/be-pomelo-spike.csproj",
+        "packagesPath": "/home/sam/.nuget/packages/",
+        "outputPath": "/home/sam/Desktop/Northcoders/Projects/be-pomelo-spike/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/stef/.nuget/NuGet/NuGet.Config"
+          "/home/sam/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -45,6 +45,10 @@
             "Pomelo.EntityFrameworkCore.MySQL": {
               "target": "Package",
               "version": "[3.0.0-rc1.final, )"
+            },
+            "gmaps-api-net": {
+              "target": "Package",
+              "version": "[0.32.0, )"
             }
           },
           "imports": [
@@ -65,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

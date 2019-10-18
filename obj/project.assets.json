@@ -23,6 +23,18 @@
           "lib/netstandard1.5/Castle.Core.dll": {}
         }
       },
+      "gmaps-api-net/0.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.3/Google.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Google.Maps.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.6.0": {
         "type": "package",
         "compile": {
@@ -1648,6 +1660,19 @@
         "lib/netstandard1.5/Castle.Core.dll",
         "lib/netstandard1.5/Castle.Core.xml",
         "readme.txt"
+      ]
+    },
+    "gmaps-api-net/0.32.0": {
+      "sha512": "1NpLt91KY0/AqGIpKmNbCNOj6uZjPbirdsnQJAGFHVLR3xHT2BrPsbVSy0LX2GZbaYuhijvourud9eQ4Q9QTyw==",
+      "type": "package",
+      "path": "gmaps-api-net/0.32.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gmaps-api-net.0.32.0.nupkg.sha512",
+        "gmaps-api-net.nuspec",
+        "lib/net461/Google.Maps.dll",
+        "lib/netstandard1.3/Google.Maps.dll"
       ]
     },
     "Microsoft.CSharp/4.6.0": {
@@ -5809,23 +5834,24 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "Microsoft.EntityFrameworkCore.Design >= 3.0.0",
-      "Pomelo.EntityFrameworkCore.MySQL >= 3.0.0-rc1.final"
+      "Pomelo.EntityFrameworkCore.MySQL >= 3.0.0-rc1.final",
+      "gmaps-api-net >= 0.32.0"
     ]
   },
   "packageFolders": {
-    "/home/stef/.nuget/packages/": {}
+    "/home/sam/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/stef/nc/project/spiking/be-pomelo-spike/be-pomelo-spike.csproj",
+      "projectUniqueName": "/home/sam/Desktop/Northcoders/Projects/be-pomelo-spike/be-pomelo-spike.csproj",
       "projectName": "be-pomelo-spike",
-      "projectPath": "/home/stef/nc/project/spiking/be-pomelo-spike/be-pomelo-spike.csproj",
-      "packagesPath": "/home/stef/.nuget/packages/",
-      "outputPath": "/home/stef/nc/project/spiking/be-pomelo-spike/obj/",
+      "projectPath": "/home/sam/Desktop/Northcoders/Projects/be-pomelo-spike/be-pomelo-spike.csproj",
+      "packagesPath": "/home/sam/.nuget/packages/",
+      "outputPath": "/home/sam/Desktop/Northcoders/Projects/be-pomelo-spike/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/stef/.nuget/NuGet/NuGet.Config"
+        "/home/sam/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
@@ -5856,6 +5882,10 @@
           "Pomelo.EntityFrameworkCore.MySQL": {
             "target": "Package",
             "version": "[3.0.0-rc1.final, )"
+          },
+          "gmaps-api-net": {
+            "target": "Package",
+            "version": "[0.32.0, )"
           }
         },
         "imports": [
@@ -5876,7 +5906,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }

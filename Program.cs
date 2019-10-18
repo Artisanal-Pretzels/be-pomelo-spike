@@ -17,6 +17,12 @@ namespace be_pomelo_spike
     {
       var host = CreateHostBuilder(args).Build();
 
+      var something = new gapi();
+
+      something.getData();
+
+      something.webReq();
+
       using (var scope = host.Services.CreateScope())
       {
         var services = scope.ServiceProvider;

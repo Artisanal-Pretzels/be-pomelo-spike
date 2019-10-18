@@ -1,4 +1,4 @@
-namespace be_pomelo_spike
+namespace be_pomelo_spike.Models
 {
   public class LocationItem
   {

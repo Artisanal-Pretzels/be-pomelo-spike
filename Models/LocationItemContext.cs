@@ -1,11 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
-namespace be_pomelo_spike
+namespace be_pomelo_spike.Models
 {
   public class LocationItemContext : DbContext
   {
 
+    public LocationItemContext(DbContextOptions<LocationItemContext> options) : base(options) { }
     public DbSet<LocationItem> LocationItem { get; set; }
 
 

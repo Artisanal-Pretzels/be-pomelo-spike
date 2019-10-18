@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using be_pomelo_spike.Models;
+using Microsoft.Extensions.DependencyInjection;
+
 
 namespace be_pomelo_spike.Controllers
 {
@@ -20,10 +22,10 @@ namespace be_pomelo_spike.Controllers
     private readonly ILogger<WeatherForecastController> _logger;
     private readonly LocationItemContext _context;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger, LocationItemContext context)
+    public WeatherForecastController(ILogger<WeatherForecastController> logger)
     {
       _logger = logger;
-      _context = context;
+
     }
 
     [HttpGet]
@@ -39,22 +41,7 @@ namespace be_pomelo_spike.Controllers
       .ToArray();
     }
 
-    //     public static void InsertData()
-    //     {
-    //       using (var context = new LocationItemContext())
-    //       {
-    //         context.Database.EnsureCreated();
 
-    //         var todoItem = new LocationItem
-    //         {
-    //           Latitude = 99,
-    //           Longitude = 100,
-    //           Name = "Pomelo connection?",
-    //         };
-    //         context.LocationItem.Add(todoItem);
 
-    //         context.SaveChanges();
-    //       }
-    //     }
   }
 }
